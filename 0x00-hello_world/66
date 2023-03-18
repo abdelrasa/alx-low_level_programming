@@ -1,8 +1,8 @@
 #include<stdio.h>
 /**
-* main -Tthe size of various
+* main - Entry point
 *
-* Return: 0 Always (Success)
+* Return: Always 0 (Success)
 */
 int main(void)
 {
