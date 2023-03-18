@@ -1,4 +1,4 @@
-#include <tsdio.h>
+#include <stdio.h>
 /**
  * main - A program use the function frintf
  *
