@@ -19,9 +19,11 @@ int main(void)
 			if (num1 == 9 && num2 == 10)
 			continue;
 
+			if ((num1 % 10) != 8)
+			{
 				putchar(',');
 				putchar(' ');
-
+			}
 		}
 	}
 
