@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strpbrk - function locates the first occurrence in the string
+ * _strpbrk - Locates the first occurrence in the string
  * @s: pointer
  * @accept: bytes in the string
  * Retrun: 0 Always
@@ -14,7 +14,7 @@ char *_strpbrk(char *s, char *accept)
 		for (i = 0; accept[i]; i++)
 		{
 			if (*s == accept[i])
-				return (s);
+			return (s);
 		}
 		s++;
 	}
