@@ -2,8 +2,8 @@
 #include "main.h"
 /**
  * str_concat - concatenates two trings to find length
- * @s1: string
- * @s2: string
+ * @s1: string1
+ * @s2: string2
  * Return: s1 and s2
  */
 char *str_concat(char *s1, char *s2)
@@ -19,11 +19,10 @@ char *str_concat(char *s1, char *s2)
 
 	i = j = 0;
 	while (s1[i] != '\0')
-		i++
-	while (s1[j] != '\0')
-		j++
-
-	cnt = malloc(sizeof(char) * (i + ci + 1));
+		i++;
+	while (s2[j] != '\0')
+		j++;
+	cnt = malloc(sizeof(char) * (i + j + 1));
 
 	if (cnt == NULL)
 		return (NULL);
