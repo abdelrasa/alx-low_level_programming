@@ -2,14 +2,14 @@
 /**
  *  _sqrt_recursion - function that can to calculate square
  *  @n: natural number
- *  return: result 
+ *  return: result
  */
 int _sqrt_recursion(int n)
 {
 	double result;
 
 	result = sqrt(n);
-	
+
 	if (result / 1 == (int)result)
 		{
 			return (result);
