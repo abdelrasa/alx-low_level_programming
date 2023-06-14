@@ -8,10 +8,9 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-
+	char *cnt;
 	int i;
 	int j;
-	char cnct;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -23,23 +22,23 @@ char *str_concat(char *s1, char *s2)
 		i++;
 	while (s2[j] != '\0')
 		j++;
-	cnct = malloc(sizeof(char) * (i + j + 1));
+	cnt = malloc(sizeof(char) * (i + j + 1));
 
-	if (cnct == NULL)
+	if (cnt == NULL)
 		return (NULL);
 	i = j = 0;
 	while (s1[i] != '\0')
 	{
-		cnct[i] = s1[i];
+		cnt[i] = s1[i];
 		i++;
 	}
 
 	while (s2[j] != '\0')
 	{
-		cnct[i] = s2[j];
+		cnt[i] = s2[j];
 		i++;
 		j++;
 	}
-	cnct[i] = '\0';
-	return (cnct);
+	cnt[i] = '\0';
+	return (cnt);
 }
